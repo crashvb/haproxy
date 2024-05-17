@@ -11,14 +11,7 @@ This docker image contains a docker [HAProxy](https://haproxy.com/).
 
 ## Entrypoint Scripts
 
-### haproxy
-
-The embedded entrypoint script is located at `/etc/entrypoint.d/haproxy` and performs the following actions:
-
-1. A new haproxy configuration is generated using the following environment variables:
-
- | Variable | Default Value | Description |
- | -------- | ------------- | ----------- |
+None.
 
 ## Standard Configuration
 
@@ -27,8 +20,6 @@ The embedded entrypoint script is located at `/etc/entrypoint.d/haproxy` and per
 ```
 /
 ├─ etc/
-│  ├─ entrypoing.d/
-│  │  └─ haproxy
 │  └─ healthcheck.d/
 │     └─ haproxy
 └─ usr/
