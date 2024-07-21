@@ -21,7 +21,7 @@ USER root
 # Install packages, download files ...
 COPY --from=parent /sbin/apt-add-repo /sbin/docker-* /sbin/entrypoint /sbin/healthcheck /sbin/
 COPY --from=parent /usr/local/lib/entrypoint.sh /usr/local/lib/
-RUN docker-apt ca-certificates curl gettext-base pwgen wget vim
+RUN docker-apt ca-certificates curl gettext-base procps pwgen wget vim
 
 # Configure: bash profile
 COPY --from=parent /root/.bashrc /var/lib/haproxy/
